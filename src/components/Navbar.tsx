@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import CTA from './CTA';
 
 const Navbar = () => {
   const links = [
@@ -9,6 +10,7 @@ const Navbar = () => {
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,11 +21,12 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  console.log(isScrolled);
-
   return (
-    <div className="fixed top-0 z-10 w-full py-4">
-      <div className="mx-auto my-0 flex max-w-6xl items-center justify-between">
+    <div className="fixed top-0 z-10 w-full px-6 py-4.5 sm:px-10 lg:py-4">
+      <div
+        className={`mx-auto my-0 flex items-center justify-between transition-normal duration-300 ${isScrolled ? 'max-w-5xl rounded-full bg-[#212121]/10 p-3 ring ring-neutral-600 backdrop-blur-2xl' : 'max-w-6xl'}`}
+      >
+        {/* Logo */}
         <svg fill="none" xmlns="http://www.w3.ozrg/2000/svg" viewBox="0 0 75 20" className="h-6">
           <path d="M13.09 10a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" fill="#006ADC"></path>
           <path
@@ -51,21 +54,69 @@ const Navbar = () => {
             fill="#fff"
           ></path>
         </svg>
-        <div className="flex items-center gap-6">
-          <div className="flex items-center justify-center text-neutral-200">
+
+        <div className="hidden items-center gap-6 lg:flex">
+          {/* Links */}
+          <div className="flex items-center justify-center text-neutral-300 transition-colors duration-200 hover:text-neutral-100">
             {links.map((item, index) => (
               <a href={item.href} key={index}>
                 {item.title}
               </a>
             ))}
           </div>
-          <div className="relative">
-            <button className="relative cursor-pointer rounded-full bg-black px-4 py-2 text-sm text-neutral-300 ring ring-white/8">
-              Join the waitlist
-            </button>
-            <div className="-bottom-0.2 absolute inset-x-0 mx-auto h-px w-[60%] bg-gradient-to-r from-cyan-400/0 via-cyan-400/90 to-cyan-400/0 transition-opacity duration-500 group-hover:opacity-40"></div>
-          </div>
+          {/* CTA */}
+          <CTA />
         </div>
+        <div
+          className={`relative py-2 lg:hidden ${isScrolled ? `px-3` : `px-0`}`}
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        >
+          <svg
+            width="16"
+            height="16"
+            fill="none"
+            className="cursor-pointer transition-all duration-1000"
+          >
+            {isOpen ? (
+              <path
+                stroke="#FFFFFF"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M2 2 L14 14 M2 14 L14 2"
+              ></path>
+            ) : (
+              <path
+                stroke="#FFFFFF"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M2 4h12M2 12h12"
+              ></path>
+            )}
+          </svg>
+        </div>
+        {isOpen && (
+          <div
+            className={`absolute inset-x-0 top-16 z-100 mx-auto flex w-full max-w-[94.5%] flex-col items-center justify-center gap-4 rounded-lg border border-neutral-400/40 bg-[#040407] p-8 shadow-lg transition-all duration-400 sm:max-w-[87.5%] lg:hidden`}
+          >
+            {/* Cobalt links */}
+            <div className="flex flex-col items-center gap-3">
+              {links.map((items: any, index: any) => (
+                <a
+                  href={items.href}
+                  key={index}
+                  className="font-normal text-neutral-300 transition duration-200 hover:text-[#595959]"
+                >
+                  {items.title}
+                </a>
+              ))}
+            </div>
+
+            {/* Cobalt CTA */}
+            <CTA />
+          </div>
+        )}
       </div>
     </div>
   );
