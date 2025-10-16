@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="mt-10 flex w-full flex-col gap-6">
-          <div className="z-100 mx-auto flex w-fit items-center justify-center sm:gap-2 gap-3 sm:flex-row flex-col">
+          <div className="z-1 mx-auto flex w-fit items-center justify-center sm:gap-2 gap-3 sm:flex-row flex-col">
             <input
               type="text"
               className="rounded-full border border-neutral-400/20 px-4 py-2 text-sm text-neutral-200 backdrop-blur-2xl focus:outline-none focus:ring-2 focus:ring-transparent focus:ring-offset-2 focus:ring-offset-black focus:shadow-[0_0_0_3px] placeholder:text-sm text-center sm:text-start"
