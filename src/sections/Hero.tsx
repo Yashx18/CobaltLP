@@ -16,6 +16,7 @@ const Hero = () => {
         </defs>
         <rect width="100%" height="100%" stroke-width="0" fill="url(#hero)"></rect>
       </svg>
+      {/* Actual content starts here */}
       <div className="mx-auto w-full max-w-5xl pt-50">
         <div className="mx-auto my-0 flex h-full max-w-4xl flex-col items-center justify-center">
           <h1 className="max-w-3xl bg-[linear-gradient(to_bottom_right,white,grey)] bg-clip-text text-center text-4xl font-bold text-transparent sm:text-6xl sm:font-semibold md:text-7xl">
