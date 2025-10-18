@@ -1,8 +1,8 @@
 import { TypingAnimation } from '@/components/ui/typing-animation';
 const FeatureCards = () => {
   return (
-    <section className="h-fit w-full px-6 sm:px-10 pb-20">
-      <div className="mx-auto flex w-full max-w-5xl flex-col items-center justify-between lg:gap-15 md:gap-10 gap-8 py-10">
+    <section className="h-fit w-full px-6 pb-20 sm:px-10">
+      <div className="mx-auto flex w-full max-w-5xl flex-col items-center justify-between gap-8 py-10 md:gap-10 lg:gap-15">
         {/* Heading for the section */}
         <div className="w-full">
           <h2 className="bg-[linear-gradient(to_bottom_right,white,grey)] bg-clip-text pb-2 text-2xl font-bold text-transparent sm:text-3xl md:text-4xl">
@@ -198,7 +198,7 @@ const FeatureCards = () => {
                       ]}
                       typeSpeed={40}
                       pauseDelay={1000}
-                      className="text-sm text-neutral-400"
+                      className="text-xs text-neutral-400 sm:text-sm"
                       loop
                     />
                   </div>
