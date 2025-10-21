@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <main className="overflow-hidden bg-[#09090b] pb-10 selection:bg-[#67e8f9] selection:text-[#155e75]">
         <Hero />
-        <FeatureCards />
         <FeaturesGrid />
+        <FeatureCards />
         <CTAsection />
         <Footer />
       </main>
