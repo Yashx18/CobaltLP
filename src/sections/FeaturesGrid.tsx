@@ -640,8 +640,8 @@ const FeaturesGrid = () => {
           {/* Card 4 */}
           <div className="col-span-7 flex h-[400px] flex-col items-start rounded-xl border border-neutral-500/20 bg-[#101013]">
             {/* Visual content */}
-            <div className="[mask:radial-gradient(60%_60%_at_50%,rgba(0,0,0,0.9)_35%,rgba(0,0,0,0)_100%)]">
-              <div className="flex transform-gpu justify-between gap-12.5">
+            <div className="[mask:radial-gradient(60%_60%_at_50%,rgba(0,0,0,0.9)_35%,rgba(0,0,0,0)_100%)] w-full">
+              <div className="flex transform-gpu justify-between px-auto">
                 <div className="-ml-4 flex flex-col gap-8 sm:ml-8">
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-zinc-950 ring-1 ring-zinc-100/10 transition-all duration-200 hover:scale-110 hover:cursor-pointer hover:opacity-95">
                     <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
