@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 z-10 w-full px-6 py-4.5 sm:px-10 lg:py-4">
       <div
-        className={`mx-auto my-0 flex items-center justify-between transition-normal duration-300 ${isScrolled ? 'max-w-5xl rounded-full bg-[#212121]/10 p-3 ring ring-neutral-600 backdrop-blur-2xl' : 'max-w-6xl'}`}
+        className={`mx-auto my-0 flex items-center justify-between transition-normal duration-300 ${isScrolled ? 'max-w-5xl rounded-full bg-[#212121]/1 p-3 ring ring-neutral-600/50 backdrop-blur-2xl' : 'max-w-6xl'}`}
       >
         {/* Logo */}
         <svg fill="none" xmlns="http://www.w3.ozrg/2000/svg" viewBox="0 0 75 20" className="h-6">

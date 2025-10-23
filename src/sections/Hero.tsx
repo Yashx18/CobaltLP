@@ -4,9 +4,9 @@ import CTA from '../components/CTA';
 const Hero = () => {
   return (
     <section className="relative h-fit w-full bg-[#09090b] px-6 sm:px-10">
-      <div className="absolute inset-0 bg-[image:radial-gradient(80%_50%_at_50%_-20%,hsl(206,81.9%,65.3%,0.5),rgba(255,255,255,0))]"></div>
+      <div className="absolute inset-0 bg-[image:radial-gradient(80%_50%_at_50%_-20%,hsl(206,81.9%,65.3%,0.5),rgba(255,255,255,0))] pointer-events-none"></div>
       <svg
-        className="absolute inset-0 h-full w-full [mask-image:radial-gradient(75%_50%_at_top_center,white,transparent)] stroke-white/5"
+        className="absolute inset-0 h-full w-full [mask-image:radial-gradient(75%_50%_at_top_center,white,transparent)] stroke-white/5 pointer-events-none" 
         aria-hidden="true"
       >
         <defs>
@@ -60,7 +60,7 @@ const Hero = () => {
 
         {/* Banner */}
         <div className="mx-auto h-fit w-full py-10">
-          <img src={banner} alt="banner" className="w-full rounded-2xl border border-neutral-800" />
+          <img draggable={false} src={banner} alt="banner" className="w-full rounded-2xl border border-neutral-800" />
         </div>
 
         {/* Hero feature */}

@@ -3,13 +3,14 @@ import CTA from '@/components/CTA';
 const CTAsection = () => {
   return (
     <section className="h-fit w-full px-6 sm:px-10">
-      <div className="max-w-5x relative mx-auto w-full py-14">
+      <div className="relative mx-auto w-full max-w-5xl py-14">
         <div
           aria-hidden="true"
-          className="user-select-none center pointer-events-none absolute -top-0.5 left-1/2 h-px w-4/5 max-w-[500px] -translate-x-1/2 -translate-y-1/2 transform-gpu [background:linear-gradient(90deg,rgba(0,0,0,0)_0%,rgba(2,132,199,0.65)_50%,rgba(0,0,0,0)_100%)]"
+          className="user-select-none pointer-events-none absolute -top-0.5 left-1/2 h-px w-4/5 max-w-[500px] -translate-x-1/2 -translate-y-1/2 transform-gpu [background:linear-gradient(90deg,rgba(0,0,0,0)_0%,rgba(2,132,199,0.65)_50%,rgba(0,0,0,0)_100%)]"
         ></div>
+
         <div
-          className="absolute inset-x-0 top-10 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
+          className="pointer-events-none absolute inset-x-0 top-10 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
           aria-hidden="true"
         >
           <div
@@ -20,6 +21,7 @@ const CTAsection = () => {
             }}
           ></div>
         </div>
+
         <div className="relative isolate">
           <svg className="absolute inset-0 h-full w-full stroke-white/90" aria-hidden="true">
             <defs>
@@ -31,7 +33,7 @@ const CTAsection = () => {
           </svg>
 
           <div
-            className="absolute inset-x-0 top-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
+            className="pointer-events-none absolute inset-x-0 top-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
             aria-hidden="true"
           >
             <div
@@ -43,6 +45,7 @@ const CTAsection = () => {
             ></div>
           </div>
         </div>
+
         <div className="relative flex flex-col items-center gap-4">
           <span className="max-w-lg bg-[linear-gradient(to_bottom_right,white,grey)] bg-clip-text text-center text-3xl font-semibold text-transparent">
             See where financial automation can take your business.
@@ -56,4 +59,5 @@ const CTAsection = () => {
     </section>
   );
 };
+
 export default CTAsection;

@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <section className="h-fit w-full px-6 sm:px-10">
-      <div className="mx-auto flex w-full max-w-5xl flex-col items-center justify-between gap-8 border-t-[0.1px] border-neutral-400/20 py-6 md:gap-10 lg:gap-15 z-100">
+      <div className="mx-auto flex w-full max-w-5xl flex-col items-center justify-between gap-8 border-t-[0.1px] border-neutral-400/20 py-6 md:gap-10 lg:gap-15">
         <div className="flex w-full flex-col-reverse md:gap-10 gap-6 items-center justify-between text-white md:flex-row md:items-start ">
           {/* About Cobalt Section */}
           <div className="flex flex-col items-start gap-5">

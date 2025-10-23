@@ -947,7 +947,7 @@ const FeaturesGrid = () => {
           <div className="col-span-5 flex h-[400px] flex-col items-start rounded-xl border border-neutral-500/20 bg-[#101013]">
             {/* Visual content */}
             <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
-              <div className="absolute top-4 z-20 h-[200px] w-[250px] rounded-lg bg-zinc-900/60 ring-1 ring-zinc-100/5 backdrop-blur-sm md:top-5 lg:left-12">
+              <div className="absolute top-4 z-2 h-[200px] w-[250px] rounded-lg bg-zinc-900/60 ring-1 ring-zinc-100/5 backdrop-blur-sm md:top-5 lg:left-12">
                 <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314 234">
                   <g
                     clip-path="url(#a)"
@@ -1136,7 +1136,7 @@ const FeaturesGrid = () => {
                   height={243}
                   decoding="async"
                   data-nimg="1"
-                  className="absolute z-10 hidden h-full w-full lg:block"
+                  className="absolute z-1 hidden h-full w-full lg:block"
                   style={{ color: 'transparent' }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                   src={keys}
