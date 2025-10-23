@@ -638,10 +638,10 @@ const FeaturesGrid = () => {
           </div>
           {/* Row 2 */}
           {/* Card 4 */}
-          <div className="col-span-7 flex h-[400px] flex-col items-start rounded-xl border border-neutral-500/20 bg-[#101013]">
+          <div className="col-span-7 flex h-[400px] justify-between flex-col items-start rounded-xl border border-neutral-500/20 bg-[#101013]">
             {/* Visual content */}
-            <div className="[mask:radial-gradient(60%_60%_at_50%,rgba(0,0,0,0.9)_35%,rgba(0,0,0,0)_100%)] w-full">
-              <div className="flex transform-gpu justify-between px-auto">
+            <div className="w-full [mask:radial-gradient(60%_60%_at_50%,rgba(0,0,0,0.9)_35%,rgba(0,0,0,0)_100%)]">
+              <div className="px-auto flex justify-between">
                 <div className="-ml-4 flex flex-col gap-8 sm:ml-8">
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-zinc-950 ring-1 ring-zinc-100/10 transition-all duration-200 hover:scale-110 hover:cursor-pointer hover:opacity-95">
                     <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -664,7 +664,11 @@ const FeaturesGrid = () => {
                     </svg>
                   </div>
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-zinc-950 ring-1 ring-zinc-100/10 transition-all duration-200 hover:scale-110 hover:cursor-pointer hover:opacity-95">
-                    <svg className="h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+                    <svg
+                      className="h-12 w-12"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 600 450"
+                    >
                       <path
                         d="M122.6 98c-29.2 0-51.5 22.2-51.5 50.6 0 31.2 22.2 43.2 46.9 50.6 23.3 7.4 34.4 15.6 34.4 31.7 0 16.4-12.2 27.9-28.2 27.9s-29.8-11.5-29.8-29.2c0-9.8 4.6-12.3 4.6-17.8 0-6.3-4.3-10.9-11.4-10.9-8.1 0-16.5 12.3-16.5 29.8 0 28.2 24.1 49 53.1 49 29.2 0 51.5-22.2 51.5-50.6 0-30.9-22.2-43.2-47.1-50.6-23-7.1-34.1-15.6-34.1-31.7s11.9-27.6 27.9-27.6c16.5 0 29.8 11.7 30.1 27.9.3 7.4 5.4 11.7 11.4 11.7 6.2 0 11.9-4.4 11.6-12.3-.7-28.2-24.2-48.5-52.9-48.5zm117.5 181.4c13 0 23-4.4 23-13.1 0-6.6-5.4-10.9-10.6-10.9-3.8 0-6.5 1.6-12.7 1.6-16.8 0-30.1-14.5-30.1-31.5 0-18.3 13.5-32.8 30.6-32.8 19.2 0 31.4 14.8 31.4 36.1v39.1c0 6.9 5.4 11.5 11.9 11.5 6.2 0 11.6-4.7 11.6-11.5V228c0-32.8-22.5-56.9-54.5-56.9-29.8 0-54.5 23.3-54.5 54.4.3 30.1 24.7 53.9 53.9 53.9zm119.2 73.3c29.2 0 51.5-22.2 51.5-50.6 0-31.2-22.2-43.2-47.1-50.6-23-7.4-34.1-15.6-34.1-31.7s12.2-27.9 27.9-27.9c16 0 30.1 11.5 30.1 29.2 0 9.9-4.6 12.3-4.6 17.8 0 6.3 4.3 10.9 11.1 10.9 8.4 0 16.8-12.3 16.8-29.8 0-28.2-24.4-49-53.4-49-29.2 0-51.2 22.2-51.2 50.6 0 30.9 21.9 43.2 46.9 50.6 23.3 7.1 34.4 15.6 34.4 31.7 0 16.4-12.2 27.6-27.9 27.6-16.8 0-29.8-11.5-30.1-27.9-.3-7.4-5.7-11.5-11.4-11.5-6.2 0-11.9 4.1-11.6 12 .1 28.7 23.7 48.6 52.7 48.6zm117.6-73.3c15.1 0 27.1-4.4 35.5-9.6 8.1-5.2 11.3-9.6 11.3-14.5 0-5.2-3.8-9.8-10.8-9.8-8.4 0-15.1 12.6-35.8 12.6-18.1 0-32.5-14.5-32.5-32.8 0-18.1 13.8-32.8 31.1-32.8 18.7 0 28.7 12.3 28.7 20.2 0 2.2-1.6 3.3-3.8 3.3h-22.7c-6.2 0-10.8 4.1-10.8 9.6 0 6 4.6 10.4 10.8 10.4H509c11.9 0 19.2-6.3 19.2-17 0-26.8-22.7-47.8-52.9-47.8-29.8 0-53.9 24.1-53.9 54.1s25.1 54.1 55.5 54.1z"
                         fill="#52af38"
@@ -682,7 +686,11 @@ const FeaturesGrid = () => {
                 </div>
                 <div className="flex flex-col gap-8 pt-8">
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-zinc-950 ring-1 ring-zinc-100/10 transition-all duration-200 hover:scale-110 hover:cursor-pointer hover:opacity-95">
-                    <svg className="h-10 w-10" viewBox="0 0 45 46" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                      className="h-10 w-10"
+                      viewBox="0 0 45 46"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         fill="#13B5EA"
                         d="M22.46 45.49a22.48 22.48 0 0 0 22.45-22.5A22.47 22.47 0 0 0 22.46.5 22.47 22.47 0 0 0 0 23a22.48 22.48 0 0 0 22.46 22.49"
@@ -694,7 +702,11 @@ const FeaturesGrid = () => {
                     </svg>
                   </div>
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-zinc-950 ring-1 ring-zinc-100/10 transition-all duration-200 hover:scale-110 hover:cursor-pointer hover:opacity-95">
-                    <svg className="h-10 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 27">
+                    <svg
+                      className="h-10 w-10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 27"
+                    >
                       <path
                         d="M23.93 26.02C31.5 19.52 42.15 13.21 48 10.94c-.9-.58-2.31-1.41-3.9-2.31-7.54 2.49-16.35 8-24.21 14.25 1.33 1.01 2.74 2.06 4.04 3.14Z"
                         fill="#E31837"
@@ -768,7 +780,11 @@ const FeaturesGrid = () => {
                     </svg>
                   </div>
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-zinc-950 ring-1 ring-zinc-100/10 transition-all duration-200 hover:scale-110 hover:cursor-pointer hover:opacity-95">
-                    <svg className="h-10 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                    <svg
+                      className="h-10 w-10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 128 128"
+                    >
                       <path d="M64 128A64 64 0 1 0 64 0a64 64 0 0 0 0 128z" fill="#2ca01c"></path>
                       <path
                         d="M17.78 64a24.89 24.89 0 0 0 24.89 24.89h3.55v-9.25h-3.55a15.64 15.64 0 1 1 0-31.29h8.53v48.36a9.25 9.25 0 0 0 9.24 9.25V39.1H42.67A24.89 24.89 0 0 0 17.77 64zm67.55-24.89h-3.55v9.25h3.55a15.64 15.64 0 0 1 0 31.28H76.8V31.3a9.24 9.24 0 0 0-9.24-9.24V88.9h17.77a24.89 24.89 0 0 0 0-49.78z"
@@ -777,7 +793,11 @@ const FeaturesGrid = () => {
                     </svg>
                   </div>
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-zinc-950 ring-1 ring-zinc-100/10 transition-all duration-200 hover:scale-110 hover:cursor-pointer hover:opacity-95">
-                    <svg className="h-10 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <svg
+                      className="h-10 w-10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                    >
                       <path
                         d="M42.1 23.33c.1-1.57.52-2.3 1.33-2.3.8 0 1.2.75 1.26 2.3h-2.6Zm5.89.93c0-1.75-.39-3.14-1.13-4.11a4.06 4.06 0 0 0-3.37-1.5c-2.99 0-4.85 2.2-4.85 5.75 0 1.98.5 3.46 1.48 4.41.98.95 2.13 1.27 3.76 1.27a6.7 6.7 0 0 0 3.77-.93l-.38-2.41c-.93.48-1.96.73-3 .72-.69 0-1.15-.15-1.49-.45-.34-.3-.58-.81-.65-1.55h5.82l.04-1.2Zm-14.05 2.38c-.3.54-.72.82-1.24.82a2.1 2.1 0 0 1-.95-.22v-5.23c.6-.63 1.13-.7 1.33-.7.9 0 1.34.96 1.34 2.85 0 1.08-.16 1.92-.48 2.48Zm2.91-6.8a3.1 3.1 0 0 0-2.59-1.2c-1.1 0-1.9.43-2.75 1.33l-.18-1.1h-3.08v15.08l3.51-.58v-3.54c.52.16 1.05.25 1.59.25a4.2 4.2 0 0 0 3.14-1.3c1-1.08 1.43-2.63 1.43-4.74 0-1.88-.36-3.3-1.07-4.2Zm-13.51-.99h3.53v11.02h-3.53V18.85Zm1.76-1.09a1.86 1.86 0 1 0 0-3.72 1.86 1.86 0 0 0 0 3.72Zm-3.28.94c-1 0-1.8.51-2.1 1.45l-.22-1.31h-3.06v11.02h3.52v-7.14c.44-.54 1.05-.74 1.9-.74.21 0 .42.02.63.05V18.8a2.85 2.85 0 0 0-.66-.1h-.01Zm-6.74 2.76.42-2.6h-2.23V15.7l-3.01.49-.43 2.66-1.07.17-.4 2.44h1.46v5.1c0 1.34.33 2.26 1.03 2.83.7.56 1.41.7 2.59.7.62 0 1.24-.09 1.84-.26v-2.76c-.34.09-.68.14-1.02.16-.7 0-1-.35-1-1.17v-4.6h1.82ZM5.03 23c-1.03-.38-1.6-.68-1.6-1.15 0-.47.33-.62.91-.62 1.06 0 2.15.4 2.9.78l.43-2.62a8.16 8.16 0 0 0-3.5-.75 4.5 4.5 0 0 0-2.89.88c-.7.58-1.12 1.5-1.12 2.56 0 1.92 1.17 2.75 3.08 3.44 1.24.45 1.64.76 1.64 1.24s-.4.73-1.11.73c-.72 0-2.37-.44-3.33-1l-.43 2.65a8.6 8.6 0 0 0 3.94.94c1.26 0 2.3-.3 3.01-.86.7-.56 1.2-1.55 1.2-2.74.01-1.96-1.19-2.78-3.13-3.48Z"
                         fill="#5C65EA"
@@ -934,7 +954,7 @@ const FeaturesGrid = () => {
                 </div>
               </div>
             </div>
-            ;{/* Text content */}
+            {/* Text content */}
             <div className="flex flex-col gap-2 px-4 pb-4">
               <span className="text-xl font-medium text-slate-200">Connect all your apps </span>
               <span className="text-sm text-neutral-500">
