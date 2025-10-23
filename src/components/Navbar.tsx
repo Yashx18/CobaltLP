@@ -4,7 +4,7 @@ import CTA from './CTA';
 const Navbar = () => {
   const links = [
     {
-      href: '/blog',
+      href: '/',
       title: 'Blog',
     },
   ];
