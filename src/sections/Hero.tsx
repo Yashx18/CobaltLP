@@ -38,7 +38,7 @@ const Hero = () => {
             <CTA />
           </div>
 
-          <div className="group z-1 mx-auto flex h-auto cursor-pointer flex-col items-center justify-center gap-1 text-neutral-400 hover:text-neutral-100">
+          <div className="group z-1 mt-4 mx-auto flex h-auto cursor-pointer flex-col items-center justify-center gap-1 text-neutral-400 hover:text-neutral-100">
             <p>Learn more</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
