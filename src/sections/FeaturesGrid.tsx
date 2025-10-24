@@ -9,10 +9,10 @@ const FeaturesGrid = () => {
       <div className="z-100 mx-auto flex w-full max-w-5xl flex-col items-center justify-between gap-8 pb-20">
         {/* Heading for Grid */}
         <div className="flex w-full flex-col gap-4 py-6">
-          <h3 className="max-w-md bg-[linear-gradient(to_bottom_right,white,grey)] bg-clip-text text-4xl font-bold text-transparent">
+          <h3 className="max-w-md bg-[linear-gradient(to_bottom_right,white,grey)] bg-clip-text text-2xl font-bold text-transparent md:text-4xl">
             Everything you need. Nothing you don’t
           </h3>
-          <span className="max-w-lg text-lg text-neutral-400">
+          <span className="text-md max-w-lg text-neutral-400 md:text-lg">
             Financial management and visibility in one place. Experience
             <span className="text-neutral-100"> a flexible toolkit </span>that makes every task feel
             like a breeze.
@@ -638,7 +638,7 @@ const FeaturesGrid = () => {
           </div>
           {/* Row 2 */}
           {/* Card 4 */}
-          <div className="col-span-7 flex h-[400px] justify-between flex-col items-start rounded-xl border border-neutral-500/20 bg-[#101013]">
+          <div className="col-span-7 flex h-[400px] flex-col items-start justify-between rounded-xl border border-neutral-500/20 bg-[#101013]">
             {/* Visual content */}
             <div className="w-full [mask:radial-gradient(60%_60%_at_50%,rgba(0,0,0,0.9)_35%,rgba(0,0,0,0)_100%)]">
               <div className="px-auto flex justify-between">
