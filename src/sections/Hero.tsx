@@ -1,5 +1,5 @@
-import banner from '../assets/dashboard.webp';
-import CTA from '../components/CTA';
+import banner from '@/assets/cobaltDashboard.png';
+import CTA from '@/components/CTA';
 
 const Hero = () => {
   return (
